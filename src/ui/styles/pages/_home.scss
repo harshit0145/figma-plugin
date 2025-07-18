@@ -1,0 +1,333 @@
+@use "@ui/styles/abstracts/variables" as *;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.homepage {
+  .logo {
+    width: 6.5em;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    object-fit: contain;
+  }
+
+  .logo.figma:hover {
+    filter: drop-shadow(0 0 2em rgba($brand-figma, 0.667));
+  }
+
+  .logo.vite:hover {
+    filter: drop-shadow(0 0 2em rgba($brand-vite, 0.667));
+  }
+
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em rgba($brand-react, 0.667));
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(3) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  .read-the-docs {
+    color: #888;
+
+    &>span {
+      font-family: Alkatra;
+    }
+  }
+}
+
+
+.hoverable-item {
+  width: 168px;
+  height: 38px;
+  background: #FBFBFB;
+  border: 1px solid #DDDDDD;
+  border-radius: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #212325;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 8.5px auto;
+  transition: background 0.3s, border-color 0.3s;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+}
+
+sl-button::part(base) {
+
+  border: none !important;
+}
+
+.hover-card {
+  width: 168px;
+  height: 119px;
+  border-radius: 15px;
+  border: 1px solid #DDDDDD;
+  background: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    margin: 0;
+  }
+}
+
+.hover-goal {
+  border-radius: 15px;
+  border: 2px solid #DDDDDD;
+  display: flex;
+  background: #FBFBFB;
+  align-items: center;
+  justify-content: center;
+  width: 352px;
+  height: 38px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+.hover-item {
+  width: 348px;
+  height: 100px;
+  border-radius: 15px;
+  background: #FBFBFB;
+  border: 1px solid #DDDDDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36px;
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+
+    p {
+      width: 22px;
+      height: 9px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: -0.019em;
+      color: #212325;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-box {
+  width: 168px;
+  height: 119px;
+  border-radius: 15px;
+  border: 1px solid #DDDDDD;
+  background: #FBFBFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+}
+
+.wide-hover-box {
+  width: 348px;
+  height: 100px;
+  border-radius: 15px;
+  background: #FBFBFB;
+  border: 1px solid #DDDDDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background: #F0F8FE;
+    border-color: #0C8CE9;
+  }
+}
+
+sl-button.custom-import-button {
+  &::part(base) {
+    width: 188px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 4.75px 8px;
+    background: #0C8CE9;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      background: #0A7ACF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+sl-button.custom-export-button {
+  --sl-button-border: 1px solid #212325; /* Shoelace custom property for border */
+  
+  &::part(base) {
+    width: 143px;
+    height: 40px;
+    border-radius: 3px;
+    padding: 4.75px 8px;
+    background: #FFFFFF;
+    border: 1px solid #212325 !important; /* Force the border with !important */
+    border-style: solid; /* Explicitly set border-style */
+    color: #212325;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      background: #F5F5F5;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.browse_kpi_btn:hover {
+  border-color: #0C8CE9 !important;
+}
+// recommendKpiButton.scss
+
+sl-button.recommend_kpi_btn::part(base) {
+  width: 188px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 4.75px 8px;
+  background: #0C8CE9;
+  border: 1px solid #0C8CE9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    background: #0284c7;
+  }
+}
+sl-button.download-button::part(base) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 40px;
+  line-height: 40px;
+  transition: none;
+
+  &:hover {
+    background: transparent;
+  }
+}

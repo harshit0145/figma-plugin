@@ -1,0 +1,110 @@
+[
+  {
+    "name": "AI Response Time",
+    "definition": "Measures the speed of AI responses.",
+    "category": "AI",
+    "popularity": 150,
+    "goal": "Reduce AI response time to under 1 second.",
+    "benchmark": "Industry standard: 95% of responses within 1 second.",
+    "measurementTools": "Custom performance monitoring tools"
+  },
+  {
+    "name": "AI Accuracy Rate",
+    "definition": "Measures the correctness of AI outputs.",
+    "category": "AI",
+    "popularity": 130,
+    "goal": "Achieve an accuracy rate of over 95%.",
+    "benchmark": "Industry standard: 90-95% accuracy.",
+    "measurementTools": "Automated testing frameworks, error rate analysis"
+  },
+  {
+    "name": "AI User Satisfaction",
+    "definition": "Measures user satisfaction with AI interactions.",
+    "category": "AI",
+    "popularity": 110,
+    "goal": "Achieve a satisfaction score of 4.5 out of 5.",
+    "benchmark": "Industry average: 4.0-4.5 out of 5.",
+    "measurementTools": "Surveys, Net Promoter Score (NPS)"
+  },
+  {
+    "name": "Color Contrast Compliance",
+    "definition": "Meets accessibility standards for text contrast.",
+    "category": "Usability",
+    "popularity": 120,
+    "goal": "Provide sufficient contrast between small and large text and the background.",
+    "benchmark": "According to WCAG (industry standard used to enforce international accessibility laws) The visual presentation of text and images of text must follow below ratios:",
+    "measurementTools": "Stark Contrast and Accessibility Checker"
+  },
+  {
+    "name": "Keyboard Navigation Support",
+    "definition": "Usable entirely via key shortcuts.",
+    "category": "Usability",
+    "popularity": 80,
+    "goal": "Ensure all interactive elements are accessible via keyboard.",
+    "benchmark": "Follow WCAG 2.1 guidelines for keyboard accessibility.",
+    "measurementTools": "Manual testing with keyboard-only navigation"
+  },
+  {
+    "name": "Customer Conversion Rate",
+    "definition": "Percentage of visitors who convert to customers.",
+    "category": "Conversion",
+    "popularity": 200,
+    "goal": "Increase conversion rate by 10% annually.",
+    "benchmark": "Industry average: 2-5% conversion rate.",
+    "measurementTools": "Google Analytics, Mixpanel"
+  },
+  {
+    "name": "Customer Retention Rate",
+    "definition": "Percentage of customers retained over a period.",
+    "category": "Retention",
+    "popularity": 180,
+    "goal": "Achieve a retention rate of over 80%.",
+    "benchmark": "Industry average: 60-70% retention rate.",
+    "measurementTools": "Cohort analysis tools, CRM software"
+  },
+  {
+    "name": "User Engagement Score",
+    "definition": "Measures user interaction with the platform.",
+    "category": "Engagement",
+    "popularity": 140,
+    "goal": "Increase average engagement score by 15%.",
+    "benchmark": "Platform-specific benchmarks vary; aim for top quartile.",
+    "measurementTools": "Amplitude, Heap Analytics"
+  },
+  {
+    "name": "B2B Lead Generation",
+    "definition": "Number of leads generated for B2B sales.",
+    "category": "B2B",
+    "popularity": 90,
+    "goal": "Generate 100 new leads per month.",
+    "benchmark": "Industry average: 50-80 leads per month.",
+    "measurementTools": "HubSpot, Salesforce"
+  },
+  {
+    "name": "B2C Sales Growth",
+    "definition": "Growth rate of B2C sales over time.",
+    "category": "B2C",
+    "popularity": 110,
+    "goal": "Achieve 20% year-over-year sales growth.",
+    "benchmark": "Industry average: 10-15% growth.",
+    "measurementTools": "Shopify Analytics, Google Analytics"
+  },
+  {
+    "name": "Quantitative Feedback Score",
+    "definition": "Score based on numerical user feedback.",
+    "category": "Quant",
+    "popularity": 70,
+    "goal": "Maintain a score above 4 out of 5.",
+    "benchmark": "Industry average: 3.5-4 out of 5.",
+    "measurementTools": "SurveyMonkey, Google Forms"
+  },
+  {
+    "name": "Qualitative User Insights",
+    "definition": "Insights gathered from user interviews.",
+    "category": "Qual",
+    "popularity": 60,
+    "goal": "Conduct 10 user interviews per quarter.",
+    "benchmark": "Industry standard: 5-10 interviews per quarter.",
+    "measurementTools": "UserTesting, Zoom recordings"
+  }
+]
